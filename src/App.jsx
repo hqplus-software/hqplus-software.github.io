@@ -7,19 +7,19 @@ export default function App() {
   return (
     <div className="font-sans text-gray-800 scroll-smooth">
       {/* Navigation */}
-      <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow z-50">
         <nav className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center space-x-3">
             <img src={logo} alt="HQ+ Software Logo" className="h-12 w-auto" />
           </div>
           <ul className="flex space-x-6">
-            <li><a href="#leistungen" className="hover:text-blue-500">Leistungen</a></li>
-            <li><a href="#technologien" className="hover:text-blue-500">Technologien</a></li>
-            <li><a href="#zertifizierungen" className="hover:text-blue-500">Zertifizierungen</a></li>
-            <li><a href="#kontakt" className="hover:text-blue-500">Kontakt</a></li>
-            <li><a href="#impressum" className="hover:text-blue-500">Impressum</a></li>
-            <li><a href="#datenschutz" className="hover:text-blue-500">Datenschutz</a></li>
-            <li><a href="#projekte" className="hover:text-blue-500">Projekte</a></li>
+            <li><a href="#leistungen" className="text-white hover:text-blue-200">Leistungen</a></li>
+            <li><a href="#technologien" className="text-white hover:text-blue-200">Technologien</a></li>
+            <li><a href="#zertifizierungen" className="text-white hover:text-blue-200">Zertifizierungen</a></li>
+            <li><a href="#kontakt" className="text-white hover:text-blue-200">Kontakt</a></li>
+            <li><a href="#impressum" className="text-white hover:text-blue-200">Impressum</a></li>
+            <li><a href="#datenschutz" className="text-white hover:text-blue-200">Datenschutz</a></li>
+            <li><a href="#projekte" className="text-white hover:text-blue-200">Projekte</a></li>
            
           </ul>
         </nav>
@@ -27,43 +27,78 @@ export default function App() {
 
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="bg-blue-100 py-20 text-center">
-          <h1 className="text-4xl font-bold text-blue-800">High Quality Softwarelösungen</h1>
-          <p className="mt-4 text-lg">Zuverlässig. Skalierbar. Nachhaltig.</p>
+        <section
+          className="relative bg-cover bg-center text-white"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1525199428030-98e22f1b4d20?auto=format&fit=crop&w=1350&q=80')",
+          }}
+        >
+          <div className="absolute inset-0 bg-blue-900/70" />
+          <div className="relative container mx-auto px-4 py-32 text-center">
+            <h1 className="text-5xl font-bold mb-4">High Quality Softwarelösungen</h1>
+            <p className="text-xl mb-8">Zuverlässig. Skalierbar. Nachhaltig.</p>
+            <a
+              href="#kontakt"
+              className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-blue-50"
+            >
+              Kontakt aufnehmen
+            </a>
+          </div>
         </section>
 
         {/* Leistungen */}
         <section id="leistungen" className="py-16 container mx-auto px-4">
           <h2 className="text-2xl font-semibold mb-8">Leistungen</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="font-bold">Softwareentwicklung</h3>
-              <ul className="list-disc ml-6">
+            <div className="bg-white rounded-lg shadow p-6">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60"
+                alt="Softwareentwicklung"
+                className="w-full h-32 object-cover rounded"
+              />
+              <h3 className="font-bold mt-4">Softwareentwicklung</h3>
+              <ul className="list-disc ml-6 mt-2">
                 <li>Java (Spring), C#</li>
                 <li>Eclipse Plugin Entwicklung</li>
                 <li>Android App Entwicklung</li>
                 <li>Embedded SW</li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-bold">Testautomatisierung</h3>
-              <ul className="list-disc ml-6">
+            <div className="bg-white rounded-lg shadow p-6">
+              <img
+                src="https://images.unsplash.com/photo-1526378722447-4ec1c2dcbc26?auto=format&fit=crop&w=800&q=60"
+                alt="Testautomatisierung"
+                className="w-full h-32 object-cover rounded"
+              />
+              <h3 className="font-bold mt-4">Testautomatisierung</h3>
+              <ul className="list-disc ml-6 mt-2">
                 <li>Test-Driven Development</li>
                 <li>Jenkins, CI/CD</li>
                 <li>Safety-kritische Toolchains</li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-bold">Schnittstellen & Tools</h3>
-              <ul className="list-disc ml-6">
+            <div className="bg-white rounded-lg shadow p-6">
+              <img
+                src="https://images.unsplash.com/photo-1581091012184-d1b0ec77a051?auto=format&fit=crop&w=800&q=60"
+                alt="Schnittstellen und Tools"
+                className="w-full h-32 object-cover rounded"
+              />
+              <h3 className="font-bold mt-4">Schnittstellen &amp; Tools</h3>
+              <ul className="list-disc ml-6 mt-2">
                 <li>IBM Jazz, OSLC, PTC Integrity</li>
                 <li>MediaWiki, SharePoint</li>
                 <li>Evergreen IT, Dokumentenmanagement</li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-bold">Datenanalyse</h3>
-              <ul className="list-disc ml-6">
+            <div className="bg-white rounded-lg shadow p-6">
+              <img
+                src="https://images.unsplash.com/photo-1581093588401-22a3fb320f52?auto=format&fit=crop&w=800&q=60"
+                alt="Datenanalyse"
+                className="w-full h-32 object-cover rounded"
+              />
+              <h3 className="font-bold mt-4">Datenanalyse</h3>
+              <ul className="list-disc ml-6 mt-2">
                 <li>Qlik, Power BI</li>
                 <li>Amazon Web Services Basics</li>
               </ul>

@@ -10,8 +10,7 @@ export default function App() {
       <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
         <nav className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="HQ+ Software Logo" className="h-8 w-auto" />
-            <span className="text-xl font-bold text-blue-700">HQ+ Software</span>
+            <img src={logo} alt="HQ+ Software Logo" className="h-12 w-auto" />
           </div>
           <ul className="flex space-x-6">
             <li><a href="#leistungen" className="hover:text-blue-500">Leistungen</a></li>
@@ -20,6 +19,8 @@ export default function App() {
             <li><a href="#kontakt" className="hover:text-blue-500">Kontakt</a></li>
             <li><a href="#impressum" className="hover:text-blue-500">Impressum</a></li>
             <li><a href="#datenschutz" className="hover:text-blue-500">Datenschutz</a></li>
+            <li><a href="#projekte" className="hover:text-blue-500">Projekte</a></li>
+           
           </ul>
         </nav>
       </header>

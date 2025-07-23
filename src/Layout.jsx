@@ -11,10 +11,13 @@ export default function Layout({ children }) {
             <img src={logo} alt="HQ+ Software Logo" className="h-12 w-auto" />
           </div>
           <ul className="flex space-x-6">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/leistungen">Leistungen</Link></li>
-            <li><Link to="/technologien">Technologien</Link></li>
-            <li><Link to="/zertifizierungen">Zertifizierungen</Link></li>
+            <li><a href="#leistungen" className="text-white hover:text-blue-200">Leistungen</a></li>
+            <li><a href="#technologien" className="text-white hover:text-blue-200">Technologien</a></li>
+            <li><a href="#zertifizierungen" className="text-white hover:text-blue-200">Zertifizierungen</a></li>
+            <li><a href="#kontakt" className="text-white hover:text-blue-200">Kontakt</a></li>
+            <li><a href="#impressum" className="text-white hover:text-blue-200">Impressum</a></li>
+            <li><a href="#datenschutz" className="text-white hover:text-blue-200">Datenschutz</a></li>
+            <li><a href="#projekte" className="text-white hover:text-blue-200">Projekte</a></li>
           </ul>
         </nav>
       </header>
